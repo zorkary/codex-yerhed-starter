@@ -7,6 +7,9 @@ without turning memory into a black box. It keeps the source of truth in plain
 Markdown, exposes local stdio MCP tools for search/read/write workflows, and uses
 explicit policies for memory updates, external sharing, and evidence.
 
+Personal project note: this is a personal project by Zackary Skelly. It is not
+affiliated with, sponsored by, or endorsed by Dragonfly or any employer.
+
 Codex already has native instructions and memory surfaces, including file-based
 ones in supported setups. Yerhed is a starter pattern for making agent memory
 more explicit and user-owned: a separate structured Markdown brain root,
