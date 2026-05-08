@@ -7,14 +7,20 @@ without turning memory into a black box. It keeps the source of truth in plain
 Markdown, exposes local stdio MCP tools for search/read/write workflows, and uses
 explicit policies for memory updates, external sharing, and evidence.
 
+Codex already has native instructions and memory surfaces, including file-based
+ones in supported setups. Yerhed is a starter pattern for making agent memory
+more explicit and user-owned: a separate structured Markdown brain root,
+Obsidian-compatible graph, MCP tools, write/egress policy, evidence tracking,
+and reviewable local commits.
+
 It is designed for people who want agent memory to feel more like a private
 working notebook than a hidden product feature: readable files, local commits,
 reviewable automation prompts, and no daemon or cloud service required.
 
 ## What It Does
 
-- **Local Markdown memory vault**: durable memory lives outside this repo in a
-  private brain root, defaulting to `~/Personal/Yerhed/brain`.
+- **Structured Markdown memory vault**: durable memory lives outside this repo
+  in a categorized private brain root, defaulting to `~/Personal/Yerhed/brain`.
 - **Obsidian-compatible graph**: people, projects, concepts, ideas, places,
   organizations, sources, inbox notes, archive notes, wikilinks, YAML
   frontmatter, and a `RESOLVER.md` salience map.
@@ -281,6 +287,12 @@ than filled with invented facts up front.
 Yerhed is doc-first and Obsidian-compatible. It takes inspiration from
 [GBrain](https://github.com/garrytan/gbrain)-style local knowledge graph
 patterns, but does not depend on GBrain.
+
+Yerhed is also adjacent to the LLM wiki / Markdown knowledge-base pattern often
+associated with Andrej Karpathy: compile useful context into maintained,
+cross-linked Markdown instead of rediscovering it from scratch each turn.
+Yerhed's particular bias is Codex-native operation, explicit write/egress
+policy, evidence discipline, and local git-backed memory.
 
 If you want a more retrieval-engine-oriented memory system, also look at
 [MemPalace](https://github.com/MemPalace/mempalace). Yerhed has a different
