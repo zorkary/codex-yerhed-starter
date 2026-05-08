@@ -1,0 +1,6 @@
+{
+  "search": "-(file:README OR file:_template OR file:schema OR file:log OR file:open-loops OR path:sources OR path:archive)",
+  "showAttachments": false,
+  "showTags": false,
+  "showOrphans": false
+}

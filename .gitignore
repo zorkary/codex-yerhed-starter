@@ -1,0 +1,16 @@
+.DS_Store
+.cache/
+.tmp/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.env.*
+
+# Local-only private operating context
+/USER.md
+/SOUL.md
+/MEMORY.md
+.obsidian/
+.privacy-denylist.local

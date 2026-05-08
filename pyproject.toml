@@ -1,0 +1,17 @@
+[project]
+name = "codex-yerhed-starter"
+version = "0.1.0"
+description = "Doc-first local memory starter for Codex"
+requires-python = ">=3.11"
+dependencies = ["mcp>=1.0"]
+
+[tool.yerhed]
+brain_root = "~/Personal/Yerhed/brain"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["yerhed_mcp*"]
+exclude = ["automations*", "config*", "evals*", "mcp*", "scripts*", "skills*", "templates*", "tests*"]
